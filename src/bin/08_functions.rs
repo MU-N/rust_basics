@@ -17,6 +17,7 @@ fn greet_person(name: &str) {
 
 // Here is an example of a simple function that takes two parameters and returns their sum:
 fn add(x: i32, y: i32) -> i32 {
+    // implicit return: the last expression in the function is returned without needing to use the return keyword
     x + y
 }
 fn main() {
