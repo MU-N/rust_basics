@@ -68,12 +68,12 @@ fn main() {
 }
 
 fn takes_ownership(s: String) {
-    println!("s = {}, ", s); // s = Hello
+    println!("s takes ownership = {}, ", s); // s = Hello
     // s goes out of scope at the end of this function, and the memory for s is automatically deallocated
 }
 
 fn take_reference(s: &String) {
-    println!("s = {}, ", s); // s = Hello
+    println!("s takes reference = {}, ", s); // s = Hello
     // s is a reference to a string variable, and it does not take ownership of the value. 
     // The caller can still use the original variable after this function is called.
 }
